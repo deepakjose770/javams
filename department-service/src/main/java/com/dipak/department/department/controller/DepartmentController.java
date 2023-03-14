@@ -22,7 +22,7 @@ public class DepartmentController {
 
 
     @GetMapping("/{id}")
-    public Department findDepartmentById(Long departmentId) {
+    public Department findDepartmentById(@PathVariable("id") Long departmentId) {
         return departmentService.findDepartmentById(departmentId);
     }
 }
